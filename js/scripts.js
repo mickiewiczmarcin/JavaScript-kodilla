@@ -1,4 +1,10 @@
-﻿var a = prompt('Podaj długość podstawy')
-var h = prompt('Podaj wysokość trójkąta')
-var triangleArea = (a*h/2)
-console.log('Pole trójkąta o podstawie a: '+a+' i wysokości h: '+h+' wynosi: '+triangleArea);
+﻿var a = prompt('Podaj wartość a')
+var b = prompt('Podaj wartość b')
+var value = [(a * a) + (2 * a * b) - (b * b)]
+if (value > '0') {
+	console.log('Wynik dodatni');
+} else if (value < '0') {
+	console.log('Wynik ujemny')
+} else {
+	console.log('Wynik równy 0')
+}
