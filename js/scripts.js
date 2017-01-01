@@ -1,10 +1,19 @@
-﻿var a = prompt('Podaj wartość a')
-var b = prompt('Podaj wartość b')
-var value = [(a * a) + (2 * a * b) - (b * b)]
-if (value > '0') {
-	console.log('Wynik dodatni');
-} else if (value < '0') {
-	console.log('Wynik ujemny')
-} else {
-	console.log('Wynik równy 0')
+function getTriangleArea(a, h) {	
+	
+	var triangleArea = (a * h/2)
+
+
+	if ((a && h) <= '0') {
+	console.log('Nieprawidłowe dane')
+	}
+	return triangleArea
 }
+console.log( getTriangleArea(10,6) )
+
+var triangle1Area = getTriangleArea(10, 15)
+var triangle2Area = getTriangleArea(5, 26)
+var triangle3Area = getTriangleArea(63, 5)
+
+console.log(triangle1Area)
+console.log(triangle2Area)
+console.log(triangle3Area)
