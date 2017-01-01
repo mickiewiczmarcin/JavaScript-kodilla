@@ -1,19 +1,10 @@
-function getTriangleArea(a, h) {	
-	
-	var triangleArea = (a * h/2)
+var womensNames = ['Kasia', 'Asia', 'Ola', 'Jola'];
+var mensNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var allNames = womensNames.concat(mensNames);
+console.log(allNames);
+var newNames = prompt('Wpisz dodatkowe imię');
 
-
-	if ((a && h) <= '0') {
-	console.log('Nieprawidłowe dane')
-	}
-	return triangleArea
+if (allNames.indexOf(newNames) == -1) {
+	var allAndNewNames = allNames.push(newNames);
+	console.log(allNames);
 }
-console.log( getTriangleArea(10,6) )
-
-var triangle1Area = getTriangleArea(10, 15)
-var triangle2Area = getTriangleArea(5, 26)
-var triangle3Area = getTriangleArea(63, 5)
-
-console.log(triangle1Area)
-console.log(triangle2Area)
-console.log(triangle3Area)
