@@ -1,10 +1,7 @@
-var womensNames = ['Kasia', 'Asia', 'Ola', 'Jola'];
-var mensNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-var allNames = womensNames.concat(mensNames);
-console.log(allNames);
-var newNames = prompt('Wpisz dodatkowe imię');
-
-if (allNames.indexOf(newNames) == -1) {
-	var allAndNewNames = allNames.push(newNames);
-	console.log(allNames);
-}
+var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
+var elephant = "Zielone słonie";
+var bigGreenElephant = elephant.toUpperCase();
+var animal = text.replace('Papugi', bigGreenElephant);
+console.log(animal.length);
+var partOfAnimal = animal.slice(0,(animal.length)/2);
+console.log(partOfAnimal);
