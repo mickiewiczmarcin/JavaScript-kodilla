@@ -1,5 +1,10 @@
-function rysujChoinkę( n = 3 ) {
-	for ( var star = "" ; for ( var n = star ; n * 2 - 1 > 0 ; star += '*')) {
-	console.log(star);
-}
-}
+﻿var galezie = prompt('Podaj wysokość choinki')
+// function rysujChoinkę(1) {
+	for (var wiersz = 1; wiersz <= galezie ; wiersz++) {
+		var star = '';
+		for (var i = 0; wiersz *2 - 1 > i ; i++) {
+			star +='*';
+		}
+		console.log(star);
+	}
+// }
