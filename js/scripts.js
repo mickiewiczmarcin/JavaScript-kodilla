@@ -1,12 +1,9 @@
-﻿
-function addEventListener(param) {
-  console.log(param);
+﻿function addEventListener() {
 }
 var list = document.getElementById('Lista');
 var newElem = document.createElement('li');
-var add = document.getElementByID('addElem');
-
-add.addEventListener('click', function (){
-	list.innerHTML += '<li>item</li>'
-	
+var add = document.getElementById('addElem');
+add.addEventListener('click', function (addEventListener) {
+	var numbersOfLi = document.getElementsByTagName('li').length;
+	list.innerHTML += '<li>item ' + numbersOfLi + '</li>'
 })
